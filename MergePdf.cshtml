@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "MergePdf";
+}
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2 style="color:blueviolet">Merge Pdf Files</h2>
+<h3 style="color:forestgreen">@ViewBag.Message</h3>
+<h3 style="color:red">@ViewBag.Message1</h3>
+<div class="form-group" style="position:center">
+    @using (Html.BeginForm("MergePdf", "PdfMerge", FormMethod.Post, new { enctype = "multipart/form-data" }))
+
+    {
+        <div>
+            <input type="submit" value="Merge Pdf" class="btn btn-info" />
+            <br />
+        </div>
+        <br />
+        <div class="text-info">
+            @Html.ActionLink("Back", "AttachPdf")
+        </div>
+    }
+</div>
+
+
+
